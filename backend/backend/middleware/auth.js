@@ -1,3 +1,5 @@
+// Ensures that only authenticated users can access certain routes (like creating or updating shipments).
+
 const jwt = require('jsonwebtoken');
 
 const auth = (req, res, next) => {

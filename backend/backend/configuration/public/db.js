@@ -1,3 +1,5 @@
+// Contains the logic to connect to the MongoDB database.
+
 const mongoose = require('mongoose');
 
 const connectDB = async () => {

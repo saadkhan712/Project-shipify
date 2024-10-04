@@ -1,3 +1,5 @@
+//Defines the schema for the shipment data stored in MongoDB
+
 const mongoose = require('mongoose');
 
 const shipmentSchema = new mongoose.Schema({

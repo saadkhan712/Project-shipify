@@ -1,3 +1,5 @@
+//Contains the logic for creating and managing shipments.
+
 const Shipment = require('../models/shipment');
 
 // Create a shipment

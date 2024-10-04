@@ -1,3 +1,5 @@
+//Defines the API endpoints for shipment-related actions.
+
 const express = require('express');
 const { createShipment, getShipments, updateShipmentStatus } = require('../controllers/shipmentController');
 const auth = require('../middleware/auth'); // Ensure authentication for protected routes

@@ -1,3 +1,5 @@
+//Generates a JWT token when a user successfully logs in.
+
 const jwt = require('jsonwebtoken');
 
 const generateToken = (userId, role) => {

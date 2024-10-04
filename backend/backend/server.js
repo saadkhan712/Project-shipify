@@ -1,4 +1,5 @@
-// server.js
+// server.js 
+// This is the core file that initializes and runs the Express server.
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');

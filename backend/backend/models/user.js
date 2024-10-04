@@ -1,3 +1,5 @@
+// Defines the schema (structure) for the User object in MongoDB.
+
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({

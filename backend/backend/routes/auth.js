@@ -40,7 +40,7 @@
 //     res.status(500).json({ message: err.message });
 //   }
 // });
-
+// Defines the API endpoints related to authentication.
 
 const express = require('express');
 const { signup, login } = require('../conrtrollers/authcontrollers');

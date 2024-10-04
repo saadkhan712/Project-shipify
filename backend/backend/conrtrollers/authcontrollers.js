@@ -1,3 +1,5 @@
+// Contains the business logic for user authentication (signup and login).
+
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const generateToken = require('../utils/generateToken');
