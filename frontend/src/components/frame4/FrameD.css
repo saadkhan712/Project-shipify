@@ -1,0 +1,103 @@
+/* Global body styling */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  } */
+  
+  /* Container for the card stack */
+  .card-container {
+    position: relative;
+    overflow: hidden; /* Ensure overflow is hidden */
+  }
+  .frame-d{
+    background:black;
+    width: 100%;
+    display: flex;
+    padding: 10rem 6rem;
+    flex: 1;
+  }
+  .frame-d-written-area{
+    width: 60%;
+  }
+  .frame-d-written-area h1{
+    color: #F49867;
+    font-size: 60px;
+    width: 80%;
+  }
+  .frame-d-written-area button{
+    width: 20rem;
+    height: 4rem;
+    background: white;
+    color: black;
+    margin: 2rem 0rem; 
+    font-size: 2rem;
+  }
+  
+  /* Base styling for each card */
+  .card-item {
+    background-color:#05005B;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    /* height: 2000px; */
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 20px;
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0; /* Hidden by default */
+    transform: scale(0.95) rotate(0deg); /* Cards behind remain straight and scaled */
+    z-index: 0;
+  }
+  .card-item button{
+    margin-left: 60px;
+  }
+  /* Styling for the active (visible) card */
+  .card-item.active {
+    opacity: 1;
+    transform: scale(1) rotate(-5deg); /* The current card rotates by 5 degrees */
+    z-index: 1; /* Ensure the active card is on top */
+  }
+  
+  /* Styling for the next card (not active but slightly visible) */
+  .card-item:not(.active) {
+    opacity: 0.5; /* Slightly visible cards behind the active one */
+    z-index: 0; /* Cards behind stay in the background */
+    transform: scale(1) rotate(0deg); /* No rotation for non-active cards */
+  }
+  
+  /* Card heading styling */
+  .card-item h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Card content styling */
+  .card-item p{
+    font-size: 16px;
+    color:white;
+    margin-top: 150px;
+    text-align: center;
+  }
+ .card-item img{
+    object-fit: contain;
+    width: 300px;
+    height: 200px;
+    top: 0;
+    position: absolute;
+  }
+  

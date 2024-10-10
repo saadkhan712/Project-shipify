@@ -1,0 +1,66 @@
+.main-div-for-frame-a{
+    background: var(--color-bg);
+    margin: 0;
+    padding: 6rem;
+}
+.frame-a{
+    padding: 2rem;
+    background:  linear-gradient(
+        125deg,
+        hsl(243deg 56% 26%) 21%,
+        hsl(228deg 64% 29%) 50%,
+        hsl(217deg 84% 29%) 62%,
+        hsl(210deg 100% 29%) 69%,
+        hsl(207deg 100% 32%) 75%,
+        hsl(205deg 100% 35%) 79%,
+        hsl(202deg 100% 37%) 83%,
+        hsl(200deg 100% 40%) 86%,
+        hsl(198deg 100% 42%) 89%,
+        hsl(195deg 100% 44%) 92%,
+        hsl(193deg 100% 46%) 95%,
+        hsl(191deg 100% 47%) 97%,
+        hsl(189deg 95% 50%) 100%
+      );;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 1rem;
+    
+}
+.the-other-h1{
+    font-weight: 100;
+    margin: 1rem 0rem;
+    width: 60%;
+    font-size: 4rem;
+    color: #F49867;
+}
+.frame-a p{
+    color: var(--color-text);
+    font-size: var(--size);            /* Adjust font size */
+    font-weight: var(--weight);
+} 
+.frame-a-bar-section{
+    display: flex;
+    flex: 1;
+    background: var(--gradient-bar);
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 4rem 0rem ;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+}
+.frame-a-bar-section p{
+    color: black;
+    width: 50%;
+}
+.join-button{
+    background: black;
+    color: white;
+    border: none;
+    height: 4rem;
+    width: 10rem;
+    border-radius: 1rem;
+    margin-left: 22rem;
+}
+/* What is GPT-3 */

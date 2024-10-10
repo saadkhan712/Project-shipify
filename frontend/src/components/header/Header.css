@@ -1,0 +1,85 @@
+img{
+     width: 20%;
+}
+ .header-area{
+  background: var(--color-bg);
+  padding-bottom: 4rem;
+ }
+ 
+.header-navbar-area{
+    display: flex;
+    flex: 1;
+}
+
+ul {
+    list-style: none;           /* Remove default bullet points */
+    display: flex;              /* Apply Flexbox to ul */
+    justify-content: space-around; /* Distribute items evenly */
+    padding: 10;                 /* Remove default padding */
+    margin: 0;                  /* Remove default margin */
+  }
+    
+  a {
+    text-decoration: none;      /* Remove underline from links */
+    font-size: var(--size);            /* Adjust font size */
+    font-weight: var(--weight);
+    text-transform: capitalize;
+    color: var(--color-text);
+}
+  
+  a:hover {
+    color: #007bff;             /* Change color on hover */
+  }
+  .navbar-content{
+    width: 70%;
+    justify-content: center;
+  }
+  .button-for-sign-in{
+    justify-content: space-between;
+  }
+  button{
+    border: 1px solid white;
+    color: white;
+    width: 100px;
+    border-radius: 0.5rem;
+    background: #FF4820;
+    font-size: 25px;
+    margin-left: 0.5rem;
+  }
+
+  .header-content-area{
+    border: 3px solid black;
+    padding:  17rem;
+    margin: 0 6rem;
+}
+
+/* App.css or your component-specific CSS file */
+.header-content-area {
+    background-image: url('../assists/Three-orange-Scania-trucks.jpg');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    filter: blur(8px);
+    -webkit-filter: blur(1.5px);
+  }
+ .written-area{
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+ }
+ h1{
+    font-size: 100px;
+    font-weight: lighter;
+ }
+ .written-area p{
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+ }
