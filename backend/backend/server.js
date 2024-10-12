@@ -23,7 +23,7 @@ app.listen(port, () => {
 
 // MongoDB connection (place this before starting the server)
 
-mongoose.connect('mongodb+srv://shipify-backend:saadkhan777@shipify.lweng.mongodb.net/', {
+mongoose.connect('mongodb+srv://******-******:********@shipify.lweng.mongodb.net/', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
