@@ -3,24 +3,33 @@
 const mongoose = require('mongoose');
 
 const shipmentSchema = new mongoose.Schema({
-  origin: {
-    type: String,
-    required: true
+  shipmentId: { type: String, required: true, unique: true },
+  pickupLocation: { type: String, required: true },
+  deliveryLocation: { type: String, required: true },
+  senderDetails: {
+    name: String,
+    contact: String,
   },
-  destination: {
-    type: String,
-    required: true
+  receiverDetails: {
+    name: String,
+    contact: String,
   },
   status: {
     type: String,
-    enum: ['pending', 'in transit', 'delivered'],
-    default: 'pending'
+    enum: ["pending", "in transit", "delivered"],
+    default: "pending",
   },
   weight: Number,
   assignedTransporter: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User'
-  }
+    ref: "User",
+  },
+  location: {
+    lat: Number,
+    lng: Number,
+  },
+  createdAt: { type: Date, default: Date.now },
+  updatedAt: { type: Date, default: Date.now },
 });
 
 module.exports = mongoose.model('Shipment', shipmentSchema);
